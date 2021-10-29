@@ -11,7 +11,8 @@ public class Main {
         boolean hasNextInt = scanner.hasNextInt();
         if (hasNextInt) {
             int number = scanner.nextInt();
-            System.out.println("Is perfect number = " + PerfectNumber.isPerfectNumber(number));
+            PerfectNumber perfectNumber = new PerfectNumber(number);
+            System.out.println("Is perfect number = " + perfectNumber.isPerfectNumber(number));
         } else {
             System.out.println("Invalid number");
         }

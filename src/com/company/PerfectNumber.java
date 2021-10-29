@@ -1,7 +1,13 @@
 package com.company;
 
 public class PerfectNumber {
-    public static boolean isPerfectNumber(int number) {
+    private int number;
+
+    public PerfectNumber(int number) {
+        this.number = number;
+    }
+
+    public boolean isPerfectNumber(int number) {
         if (number < 1) {
             return false;
         }
